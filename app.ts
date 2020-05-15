@@ -53,7 +53,12 @@ function printBalance(
     { style: "currency", currency: "USD" }
   )}`;
 }
-console.log(printBalance(3, 1000, 15));
-
-var n = 1234567.22;
-console.log(n.toLocaleString("es-MX", { style: "currency", currency: "MXN" }));
+// console.log(printBalance(3, 1000, 15));
+/* E1.5
+write a program that displays your name inside a box.
+ */
+let userName: string[] = "My Name".split("");
+let a = "+";
+for (let l in userName) {
+  console.log((a += a));
+}
